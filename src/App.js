@@ -8,7 +8,8 @@ function App() {
   const [computerScore, setComputerScore] = useState(0);
 
   function onUserClick(userInput) {
-    
+    let computerOutput = computerOutput();
+    checkWin(userInput, computerOutput);
   }
 
   function checkWin(userInput, computerOutput) {
@@ -23,11 +24,22 @@ function App() {
     }
   }
 
+  function computerOutput() {
+    // 1 - Rock
+    // 2 - Paper
+    // 3 - Scissor
+    function getRandomNumber(from, to) {
+        return Math.floor(Math.random() * to) + from;
+      }
+
+    return getRandomNumber(1, 3)
+}
+
   return (
     <div className="App">
       <p>Shubham</p>
       <div><ComputerOutput /></div>
-      <div><UserInput /></div>
+      <div><UserInput onUserClick = {onUserClick}/></div>
       <div>User score : {userScore}</div>
       <div>Computer score : {computerScore}</div>
     </div>
