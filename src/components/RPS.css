@@ -1,0 +1,59 @@
+.rpc-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background: linear-gradient(to right, #f8f9fa, #e0e0e0);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.results p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.results span {
+  font-weight: bold;
+  color: #444;
+}
+
+.winner {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.winner.user {
+  color: #28a745; /* Green */
+}
+
+.winner.computer {
+  color: #dc3545; /* Red */
+}
+
+.winner.tie {
+  color: #ffc107; /* Yellow */
+}
+
+.scores {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+}
+
+.score span {
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+/* Add transition for smoother UI updates */
+.results, .scores {
+  transition: all 0.3s ease;
+}

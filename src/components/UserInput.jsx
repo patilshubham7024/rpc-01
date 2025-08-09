@@ -1,7 +1,17 @@
-export default function UserInput(onUserClick) {
+export default function UserInput({ onUserClick }) {
+    function rock() {
+        onUserClick("Rock");
+    }
+    function paper() {
+        onUserClick("Paper");
+    }
+    function scissor() {
+        onUserClick("Scissor");
+    }
+
     return <>
-        <button class="my-button" onClick={onUserClick(1)}>Rock</button>
-        <button class="my-button" onClick={onUserClick(2)}>Paper</button>
-        <button class="my-button" onClick={onUserClick(3)}>Scissor</button>
+        <button class="my-button" onClick={rock}>Rock</button>
+        <button class="my-button" onClick={paper}>Paper</button>
+        <button class="my-button" onClick={scissor}>Scissor</button>
     </>
 }
