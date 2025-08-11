@@ -1,12 +1,15 @@
 import { useState } from "react";
 import RPS from "./components/RPS";
+import CB from "./components/CB";
 import "./Home.css";
 
 export default function HomePage() {
   const [activeGame, setActiveGame] = useState(null);
+  const callbreakURL = "https://callbreak-scorer.netlify.app/";
 
   const games = [
     { id: "rps", name: "Rock - Paper - Scissors", component: <RPS onBack={() => setActiveGame(null)} /> },
+    { id: "db", name: "Call Break", component: <CB callbreakURL={callbreakURL} home={() => setActiveGame(null)} /> },
   ];
 
   if (activeGame) {

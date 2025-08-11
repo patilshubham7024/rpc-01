@@ -1,3 +1,5 @@
+import "./RPS.css";
+
 export default function UserInput({ onUserClick }) {
     function rock() {
         onUserClick("Rock");
@@ -10,8 +12,8 @@ export default function UserInput({ onUserClick }) {
     }
 
     return <>
-        <button class="my-button" onClick={rock}>Rock</button>
-        <button class="my-button" onClick={paper}>Paper</button>
-        <button class="my-button" onClick={scissor}>Scissor</button>
+<button className="my-button" onClick={rock}>Rock</button>
+<button className="my-button" onClick={paper}>Paper</button>
+<button className="my-button" onClick={scissor}>Scissor</button>
     </>
 }
