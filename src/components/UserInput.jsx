@@ -14,6 +14,6 @@ export default function UserInput({ onUserClick }) {
     return <>
 <button className="my-button" onClick={rock}>Rock</button>
 <button className="my-button" onClick={paper}>Paper</button>
-<button className="my-button" onClick={scissor}>Scissor</button>
+<button className="my-button" onClick={scissor}>Scissors</button>
     </>
 }
