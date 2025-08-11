@@ -8,7 +8,7 @@ export default function UserInput({ onUserClick }) {
         onUserClick("Paper");
     }
     function scissor() {
-        onUserClick("Scissor");
+        onUserClick("Scissors");
     }
 
     return <>
